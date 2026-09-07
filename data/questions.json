@@ -1,0 +1,1719 @@
+{
+  "project": "Drop the Needle",
+  "version": "bank_v1",
+  "question_count": 100,
+  "production_rule": "Only status=verified is production-ready. review and unverified items require source checking.",
+  "questions": [
+    {
+      "id": "DTN-001",
+      "question": "Which non-Beatle played lead guitar on “While My Guitar Gently Weeps”?",
+      "choices": [
+        "Jimmy Page",
+        "Jeff Beck",
+        "Eric Clapton",
+        "George Harrison"
+      ],
+      "answer": "Eric Clapton",
+      "reveal": "George Harrison invited Eric Clapton to play on the session.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1968,
+      "status": "verified",
+      "sources": []
+    },
+    {
+      "id": "DTN-002",
+      "question": "Who sang backing vocals on Peter Gabriel’s “Games Without Frontiers”?",
+      "choices": [
+        "Toyah Willcox",
+        "Kate Bush",
+        "Joni Mitchell",
+        "Annie Lennox"
+      ],
+      "answer": "Kate Bush",
+      "reveal": "Kate Bush supplied the backing vocals on Gabriel’s 1980 single.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1980,
+      "status": "verified",
+      "sources": [
+        {
+          "label": "PeterGabriel.com — Games Without Frontiers",
+          "url": "https://petergabriel.com/release/games-without-frontiers/"
+        }
+      ]
+    },
+    {
+      "id": "DTN-003",
+      "question": "Who mixed the original 1973 release of the Stooges’ Raw Power?",
+      "choices": [
+        "Tony Visconti",
+        "John Cale",
+        "David Bowie",
+        "Iggy Pop"
+      ],
+      "answer": "David Bowie",
+      "reveal": "Iggy Pop produced Raw Power; David Bowie mixed the original release.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1973,
+      "status": "verified",
+      "sources": [
+        {
+          "label": "DavidBowie.com — Raw Power original Bowie mix",
+          "url": "https://www.davidbowie.com/2010/2010/02/14/raw-powers-original-bowie-mix-reinstated"
+        }
+      ]
+    },
+    {
+      "id": "DTN-004",
+      "question": "Which Velvet Underground member came from New York’s avant-garde/minimalist music world?",
+      "choices": [
+        "John Cale",
+        "Sterling Morrison",
+        "Lou Reed",
+        "Doug Yule"
+      ],
+      "answer": "John Cale",
+      "reveal": "John Cale brought viola, drones and an experimental-music background into the Velvet Underground.",
+      "category": "Connections",
+      "difficulty": "Medium",
+      "year": 1960,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-005",
+      "question": "Who sang the powerhouse guest vocal on the Rolling Stones’ “Gimme Shelter”?",
+      "choices": [
+        "P. P. Arnold",
+        "Claudia Lennear",
+        "Merry Clayton",
+        "Doris Troy"
+      ],
+      "answer": "Merry Clayton",
+      "reveal": "Merry Clayton’s late-night studio performance became one of rock’s most famous guest vocals.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1969,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-006",
+      "question": "Which future Fleetwood Mac member wrote “Black Magic Woman”?",
+      "choices": [
+        "Danny Kirwan",
+        "Jeremy Spencer",
+        "Peter Green",
+        "Mick Fleetwood"
+      ],
+      "answer": "Peter Green",
+      "reveal": "Peter Green wrote and recorded the song with Fleetwood Mac before Santana’s hit version.",
+      "category": "Song Origins",
+      "difficulty": "Medium",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-007",
+      "question": "Who played electric piano on the Beatles’ “Get Back”?",
+      "choices": [
+        "George Martin",
+        "Nicky Hopkins",
+        "Leon Russell",
+        "Billy Preston"
+      ],
+      "answer": "Billy Preston",
+      "reveal": "Billy Preston joined the Get Back sessions and was credited on the single.",
+      "category": "Personnel",
+      "difficulty": "Easy",
+      "year": 1969,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-008",
+      "question": "Which artist designed the banana cover for The Velvet Underground & Nico?",
+      "choices": [
+        "Andy Warhol",
+        "Peter Blake",
+        "Milton Glaser",
+        "Robert Rauschenberg"
+      ],
+      "answer": "Andy Warhol",
+      "reveal": "Warhol’s peelable banana became one of rock’s most recognizable sleeves.",
+      "category": "Album Art",
+      "difficulty": "Easy",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-009",
+      "question": "Before Crosby, Stills & Nash, Graham Nash was in which band?",
+      "choices": [
+        "Manfred Mann",
+        "The Hollies",
+        "The Zombies",
+        "The Searchers"
+      ],
+      "answer": "The Hollies",
+      "reveal": "Nash left the Hollies in 1968 and joined David Crosby and Stephen Stills.",
+      "category": "Lineups",
+      "difficulty": "Easy",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-010",
+      "question": "Which producer is synonymous with the “Wall of Sound”?",
+      "choices": [
+        "Joe Meek",
+        "George Martin",
+        "Phil Spector",
+        "Glyn Johns"
+      ],
+      "answer": "Phil Spector",
+      "reveal": "Spector’s dense, layered productions defined the Wall of Sound.",
+      "category": "Production",
+      "difficulty": "Easy",
+      "year": 1960,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-011",
+      "question": "What does Rush’s title “YYZ” refer to?",
+      "choices": [
+        "A Toronto radio station",
+        "A synthesizer model",
+        "Toronto Pearson airport code",
+        "A Canadian rail line"
+      ],
+      "answer": "Toronto Pearson airport code",
+      "reveal": "YYZ is the IATA airport code for Toronto Pearson, near Rush’s home city.",
+      "category": "Hidden Connections",
+      "difficulty": "Medium",
+      "year": 1981,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-012",
+      "question": "Which Rush song opens with a rhythm based on the letters YYZ in Morse code?",
+      "choices": [
+        "Tom Sawyer",
+        "La Villa Strangiato",
+        "The Spirit of Radio",
+        "YYZ"
+      ],
+      "answer": "YYZ",
+      "reveal": "The opening rhythm spells Y-Y-Z using Morse-code timing.",
+      "category": "Recording Lore",
+      "difficulty": "Medium",
+      "year": 1981,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-013",
+      "question": "Who wrote “These Days,” recorded by Nico on Chelsea Girl?",
+      "choices": [
+        "Tim Buckley",
+        "Jackson Browne",
+        "Lou Reed",
+        "Leonard Cohen"
+      ],
+      "answer": "Jackson Browne",
+      "reveal": "Jackson Browne wrote “These Days” when he was remarkably young; Nico recorded it for Chelsea Girl.",
+      "category": "Song Origins",
+      "difficulty": "Medium",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-014",
+      "question": "Who co-wrote “Me and Bobby McGee” with Fred Foster?",
+      "choices": [
+        "Mickey Newbury",
+        "Roger Miller",
+        "Kris Kristofferson",
+        "Willie Nelson"
+      ],
+      "answer": "Kris Kristofferson",
+      "reveal": "Kris Kristofferson and producer Fred Foster wrote the song before Janis Joplin’s famous version.",
+      "category": "Song Origins",
+      "difficulty": "Easy",
+      "year": 1969,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-015",
+      "question": "Coolio’s “Gangsta’s Paradise” reworks which Stevie Wonder song?",
+      "choices": [
+        "Superstition",
+        "Pastime Paradise",
+        "Living for the City",
+        "Higher Ground"
+      ],
+      "answer": "Pastime Paradise",
+      "reveal": "The track is built around Stevie Wonder’s “Pastime Paradise” from Songs in the Key of Life.",
+      "category": "Samples & Borrowing",
+      "difficulty": "Easy",
+      "year": 1995,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-016",
+      "question": "John Williams has said the music in Close Encounters of the Third Kind was influenced by which Disney song?",
+      "choices": [
+        "Someday My Prince Will Come",
+        "When You Wish Upon a Star",
+        "A Dream Is a Wish Your Heart Makes",
+        "The Second Star to the Right"
+      ],
+      "answer": "When You Wish Upon a Star",
+      "reveal": "The Pinocchio song is part of the musical DNA surrounding Close Encounters.",
+      "category": "Hidden Connections",
+      "difficulty": "Hard",
+      "year": 1977,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-017",
+      "question": "Which Police song includes an early pop-culture reference to a VCR?",
+      "choices": [
+        "Driven to Tears",
+        "Too Much Information",
+        "De Do Do Do, De Da Da Da",
+        "When the World Is Running Down, You Make the Best of What’s Still Around"
+      ],
+      "answer": "When the World Is Running Down, You Make the Best of What’s Still Around",
+      "reveal": "The lyric mentions a VCR; the stronger claim that it was the first song to do so still needs verification.",
+      "category": "Lyrics & Technology",
+      "difficulty": "Hard",
+      "year": 1980,
+      "status": "unverified",
+      "sources": [],
+      "editorial_note": "Do not include in production pool until the specific claim and wording are independently verified."
+    },
+    {
+      "id": "DTN-018",
+      "question": "Which Suzanne Vega recording became important in the development of MP3 audio compression?",
+      "choices": [
+        "Luka",
+        "Marlene on the Wall",
+        "Tom’s Diner",
+        "Left of Center"
+      ],
+      "answer": "Tom’s Diner",
+      "reveal": "Vega’s a cappella vocal was repeatedly used as a demanding test signal during MP3 development.",
+      "category": "Technology",
+      "difficulty": "Medium",
+      "year": 1987,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-019",
+      "question": "What was David Bowie’s birth surname?",
+      "choices": [
+        "Davies",
+        "Bowie",
+        "Jones",
+        "Burns"
+      ],
+      "answer": "Jones",
+      "reveal": "David Robert Jones adopted Bowie as a stage name.",
+      "category": "Identity",
+      "difficulty": "Easy",
+      "year": 1947,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-020",
+      "question": "Who replaced Eric Clapton in the Yardbirds?",
+      "choices": [
+        "Jeff Beck",
+        "Mick Taylor",
+        "Peter Green",
+        "Jimmy Page"
+      ],
+      "answer": "Jeff Beck",
+      "reveal": "Jeff Beck followed Clapton; Jimmy Page joined later.",
+      "category": "Lineups",
+      "difficulty": "Easy",
+      "year": 1965,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-021",
+      "question": "Who produced the Velvet Underground’s album Loaded?",
+      "choices": [
+        "Andy Warhol",
+        "Geoff Haslam",
+        "Tom Wilson",
+        "Brian Eno"
+      ],
+      "answer": "Geoff Haslam",
+      "reveal": "Loaded moved the band toward a more direct, song-oriented sound.",
+      "category": "Production",
+      "difficulty": "Hard",
+      "year": 1970,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-022",
+      "question": "Which producer worked on Bob Dylan’s “Like a Rolling Stone”?",
+      "choices": [
+        "Bob Johnston",
+        "George Martin",
+        "John Hammond",
+        "Tom Wilson"
+      ],
+      "answer": "Tom Wilson",
+      "reveal": "Tom Wilson produced the session that yielded Dylan’s breakthrough electric single.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1965,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-023",
+      "question": "Who played organ on Bob Dylan’s “Like a Rolling Stone”?",
+      "choices": [
+        "Al Kooper",
+        "Paul Griffin",
+        "Mike Bloomfield",
+        "Garth Hudson"
+      ],
+      "answer": "Al Kooper",
+      "reveal": "Al Kooper, not originally booked as the organist, slipped onto the instrument and created the signature part.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1965,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-024",
+      "question": "Which guitarist played on Dylan’s “Maggie’s Farm” at Newport in 1965?",
+      "choices": [
+        "Roger McGuinn",
+        "Stephen Stills",
+        "Mike Bloomfield",
+        "Robbie Robertson"
+      ],
+      "answer": "Mike Bloomfield",
+      "reveal": "Bloomfield was part of the electric band behind Dylan’s famous Newport set.",
+      "category": "Personnel",
+      "difficulty": "Hard",
+      "year": 1965,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-025",
+      "question": "Which singer wrote “Woodstock” despite not attending the festival?",
+      "choices": [
+        "Joni Mitchell",
+        "Carole King",
+        "Grace Slick",
+        "Joan Baez"
+      ],
+      "answer": "Joni Mitchell",
+      "reveal": "Mitchell wrote the song from afar after missing Woodstock; CSNY made it a rock anthem.",
+      "category": "Song Origins",
+      "difficulty": "Easy",
+      "year": 1969,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-026",
+      "question": "Which member of CSNY wrote “Ohio”?",
+      "choices": [
+        "Stephen Stills",
+        "Neil Young",
+        "Graham Nash",
+        "David Crosby"
+      ],
+      "answer": "Neil Young",
+      "reveal": "Neil Young wrote “Ohio” in response to the Kent State shootings.",
+      "category": "Song Origins",
+      "difficulty": "Easy",
+      "year": 1970,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-027",
+      "question": "Who played the guitar solo on Michael Jackson’s “Beat It”?",
+      "choices": [
+        "Jeff Beck",
+        "Neal Schon",
+        "Steve Lukather",
+        "Eddie Van Halen"
+      ],
+      "answer": "Eddie Van Halen",
+      "reveal": "Eddie Van Halen supplied the famous solo while Steve Lukather also played guitar on the track.",
+      "category": "Personnel",
+      "difficulty": "Easy",
+      "year": 1982,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-028",
+      "question": "Who played the guitar solo on Steely Dan’s “Reelin’ in the Years”?",
+      "choices": [
+        "Larry Carlton",
+        "Jeff Baxter",
+        "Denny Dias",
+        "Elliott Randall"
+      ],
+      "answer": "Elliott Randall",
+      "reveal": "Session guitarist Elliott Randall played the celebrated solo.",
+      "category": "Personnel",
+      "difficulty": "Hard",
+      "year": 1972,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-029",
+      "question": "Who played fretless bass on Paul Simon’s “You Can Call Me Al”?",
+      "choices": [
+        "Jack Bruce",
+        "Bakithi Kumalo",
+        "Pino Palladino",
+        "Tony Levin"
+      ],
+      "answer": "Bakithi Kumalo",
+      "reveal": "South African bassist Bakithi Kumalo played the track’s remarkable bass part.",
+      "category": "Personnel",
+      "difficulty": "Hard",
+      "year": 1986,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-030",
+      "question": "Which Beatle played drums on the Beatles recording of “Back in the U.S.S.R.” after Ringo temporarily quit?",
+      "choices": [
+        "Paul McCartney",
+        "John Lennon",
+        "George Harrison",
+        "Pete Best"
+      ],
+      "answer": "Paul McCartney",
+      "reveal": "With Ringo temporarily absent, the remaining Beatles contributed drums; McCartney is prominently associated with the part.",
+      "category": "Studio Stories",
+      "difficulty": "Medium",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-031",
+      "question": "Who played the famous saxophone solo on Gerry Rafferty’s “Baker Street”?",
+      "choices": [
+        "Clarence Clemons",
+        "David Sanborn",
+        "Raphael Ravenscroft",
+        "Bobby Keys"
+      ],
+      "answer": "Raphael Ravenscroft",
+      "reveal": "Raphael Ravenscroft played the instantly recognizable saxophone line.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1978,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-032",
+      "question": "Who played saxophone on the Rolling Stones’ “Brown Sugar”?",
+      "choices": [
+        "King Curtis",
+        "Clarence Clemons",
+        "Wayne Shorter",
+        "Bobby Keys"
+      ],
+      "answer": "Bobby Keys",
+      "reveal": "Bobby Keys became a recurring Stones collaborator and played the song’s sax solo.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1971,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-033",
+      "question": "Which singer appears on Massive Attack’s “Teardrop”?",
+      "choices": [
+        "Elizabeth Fraser",
+        "Tracey Thorn",
+        "Björk",
+        "Hope Sandoval"
+      ],
+      "answer": "Elizabeth Fraser",
+      "reveal": "Cocteau Twins singer Elizabeth Fraser supplied the lead vocal.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1998,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-034",
+      "question": "Who sang lead on the Temptations’ “My Girl”?",
+      "choices": [
+        "David Ruffin",
+        "Eddie Kendricks",
+        "Dennis Edwards",
+        "Paul Williams"
+      ],
+      "answer": "David Ruffin",
+      "reveal": "David Ruffin’s lead vocal helped turn “My Girl” into a Motown standard.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1964,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-035",
+      "question": "Who co-wrote the Monkees’ “I’m a Believer”?",
+      "choices": [
+        "Harry Nilsson",
+        "Neil Diamond",
+        "Carole King",
+        "Paul Simon"
+      ],
+      "answer": "Neil Diamond",
+      "reveal": "Neil Diamond wrote the song before the Monkees made it a huge hit.",
+      "category": "Song Origins",
+      "difficulty": "Easy",
+      "year": 1966,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-036",
+      "question": "Who wrote “Different Drum,” made famous by the Stone Poneys with Linda Ronstadt?",
+      "choices": [
+        "John Phillips",
+        "Gene Clark",
+        "Neil Young",
+        "Michael Nesmith"
+      ],
+      "answer": "Michael Nesmith",
+      "reveal": "Monkee Michael Nesmith wrote “Different Drum.”",
+      "category": "Song Origins",
+      "difficulty": "Medium",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-037",
+      "question": "Which future member of the Eagles played with Linda Ronstadt before the Eagles formed?",
+      "choices": [
+        "Don Felder",
+        "Don Henley",
+        "Timothy B. Schmit",
+        "Joe Walsh"
+      ],
+      "answer": "Don Henley",
+      "reveal": "Don Henley and Glenn Frey both backed Ronstadt before forming the Eagles.",
+      "category": "Connections",
+      "difficulty": "Medium",
+      "year": 1971,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-038",
+      "question": "Which singer was originally asked to duet on Peter Gabriel’s “Don’t Give Up” before Kate Bush?",
+      "choices": [
+        "Dolly Parton",
+        "Annie Lennox",
+        "Joni Mitchell",
+        "Emmylou Harris"
+      ],
+      "answer": "Dolly Parton",
+      "reveal": "Gabriel initially had Dolly Parton in mind; Kate Bush ultimately delivered the duet vocal.",
+      "category": "What If?",
+      "difficulty": "Hard",
+      "year": 1986,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-039",
+      "question": "Which guitarist played the solo on David Bowie’s “Let’s Dance”?",
+      "choices": [
+        "Stevie Ray Vaughan",
+        "Carlos Alomar",
+        "Nile Rodgers",
+        "Robert Fripp"
+      ],
+      "answer": "Stevie Ray Vaughan",
+      "reveal": "Stevie Ray Vaughan’s guitar became a defining sound on Bowie’s Let’s Dance album.",
+      "category": "Personnel",
+      "difficulty": "Easy",
+      "year": 1983,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-040",
+      "question": "Who produced David Bowie’s Let’s Dance?",
+      "choices": [
+        "Tony Visconti",
+        "Brian Eno",
+        "Quincy Jones",
+        "Nile Rodgers"
+      ],
+      "answer": "Nile Rodgers",
+      "reveal": "Chic’s Nile Rodgers produced Bowie’s blockbuster 1983 album.",
+      "category": "Production",
+      "difficulty": "Easy",
+      "year": 1983,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-041",
+      "question": "Who played lead guitar on David Bowie’s “Heroes”?",
+      "choices": [
+        "Robert Fripp",
+        "Adrian Belew",
+        "Carlos Alomar",
+        "Mick Ronson"
+      ],
+      "answer": "Robert Fripp",
+      "reveal": "King Crimson guitarist Robert Fripp created the sustained guitar lines.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1977,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-042",
+      "question": "Which producer collaborated with Bowie on Low and “Heroes”?",
+      "choices": [
+        "Tony Visconti",
+        "Chris Thomas",
+        "George Martin",
+        "Martin Hannett"
+      ],
+      "answer": "Tony Visconti",
+      "reveal": "Tony Visconti produced the Berlin-era albums with Bowie; Brian Eno was a crucial collaborator but not the producer.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1977,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-043",
+      "question": "Who produced Joy Division’s Unknown Pleasures?",
+      "choices": [
+        "Tony Wilson",
+        "Brian Eno",
+        "Steve Lillywhite",
+        "Martin Hannett"
+      ],
+      "answer": "Martin Hannett",
+      "reveal": "Martin Hannett’s spacious, unconventional production became inseparable from Joy Division’s sound.",
+      "category": "Production",
+      "difficulty": "Easy",
+      "year": 1979,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-044",
+      "question": "Which graphic designer created the iconic Unknown Pleasures cover treatment?",
+      "choices": [
+        "Peter Saville",
+        "Jamie Reid",
+        "Barney Bubbles",
+        "Storm Thorgerson"
+      ],
+      "answer": "Peter Saville",
+      "reveal": "Peter Saville adapted the pulsar visualization into Factory Records’ stark sleeve design.",
+      "category": "Album Art",
+      "difficulty": "Medium",
+      "year": 1979,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-045",
+      "question": "Which designer created the Sex Pistols’ ransom-note visual identity?",
+      "choices": [
+        "Peter Saville",
+        "Raymond Pettibon",
+        "Jamie Reid",
+        "Neville Brody"
+      ],
+      "answer": "Jamie Reid",
+      "reveal": "Jamie Reid’s cut-and-paste graphics became one of punk’s defining visual languages.",
+      "category": "Album Art",
+      "difficulty": "Medium",
+      "year": 1977,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-046",
+      "question": "Which artist designed the Rolling Stones’ Sticky Fingers cover?",
+      "choices": [
+        "Peter Blake",
+        "Guy Peellaert",
+        "Andy Warhol",
+        "Robert Mapplethorpe"
+      ],
+      "answer": "Andy Warhol",
+      "reveal": "Warhol conceived the famous jeans-and-zipper package.",
+      "category": "Album Art",
+      "difficulty": "Medium",
+      "year": 1971,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-047",
+      "question": "Who designed the Beatles’ Sgt. Pepper cover with Jann Haworth?",
+      "choices": [
+        "Peter Blake",
+        "Storm Thorgerson",
+        "Richard Hamilton",
+        "David Bailey"
+      ],
+      "answer": "Peter Blake",
+      "reveal": "Peter Blake and Jann Haworth created the famous crowd collage.",
+      "category": "Album Art",
+      "difficulty": "Medium",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-048",
+      "question": "Which artist designed the Beatles’ White Album packaging?",
+      "choices": [
+        "Richard Hamilton",
+        "Hipgnosis",
+        "Andy Warhol",
+        "Peter Blake"
+      ],
+      "answer": "Richard Hamilton",
+      "reveal": "Richard Hamilton pushed in the opposite direction from Sgt. Pepper with an almost blank sleeve.",
+      "category": "Album Art",
+      "difficulty": "Hard",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-049",
+      "question": "Which design studio is strongly associated with classic Pink Floyd album covers?",
+      "choices": [
+        "Assorted iMaGes",
+        "Factory",
+        "23 Envelope",
+        "Hipgnosis"
+      ],
+      "answer": "Hipgnosis",
+      "reveal": "Hipgnosis, founded by Storm Thorgerson and Aubrey Powell, created many landmark Pink Floyd sleeves.",
+      "category": "Album Art",
+      "difficulty": "Easy",
+      "year": 1970,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-050",
+      "question": "Which Pink Floyd album cover famously shows a prism dispersing light?",
+      "choices": [
+        "Meddle",
+        "Wish You Were Here",
+        "Atom Heart Mother",
+        "The Dark Side of the Moon"
+      ],
+      "answer": "The Dark Side of the Moon",
+      "reveal": "Hipgnosis and George Hardie created the prism design.",
+      "category": "Album Art",
+      "difficulty": "Easy",
+      "year": 1973,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-051",
+      "question": "Who sang lead on Jefferson Airplane’s “Somebody to Love”?",
+      "choices": [
+        "Signe Toly Anderson",
+        "Marty Balin",
+        "Paul Kantner",
+        "Grace Slick"
+      ],
+      "answer": "Grace Slick",
+      "reveal": "Grace Slick brought the song from her earlier band, the Great Society, to Jefferson Airplane.",
+      "category": "Personnel",
+      "difficulty": "Easy",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-052",
+      "question": "Which band first recorded “Somebody to Love” before Jefferson Airplane?",
+      "choices": [
+        "Moby Grape",
+        "Quicksilver Messenger Service",
+        "The Great Society",
+        "Big Brother and the Holding Company"
+      ],
+      "answer": "The Great Society",
+      "reveal": "Grace Slick’s Great Society recorded the song before Jefferson Airplane’s hit version.",
+      "category": "Song Origins",
+      "difficulty": "Hard",
+      "year": 1966,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-053",
+      "question": "Who wrote Jefferson Airplane’s “Somebody to Love”?",
+      "choices": [
+        "Marty Balin",
+        "Darby Slick",
+        "Grace Slick",
+        "Paul Kantner"
+      ],
+      "answer": "Darby Slick",
+      "reveal": "Grace Slick’s brother-in-law Darby Slick wrote the song.",
+      "category": "Song Origins",
+      "difficulty": "Medium",
+      "year": 1966,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-054",
+      "question": "Which band did Janis Joplin front before her solo career?",
+      "choices": [
+        "Moby Grape",
+        "It’s a Beautiful Day",
+        "Quicksilver Messenger Service",
+        "Big Brother and the Holding Company"
+      ],
+      "answer": "Big Brother and the Holding Company",
+      "reveal": "Joplin’s breakthrough came with Big Brother and the Holding Company.",
+      "category": "Lineups",
+      "difficulty": "Easy",
+      "year": 1966,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-055",
+      "question": "Who designed the cover art for Big Brother and the Holding Company’s Cheap Thrills?",
+      "choices": [
+        "Wes Wilson",
+        "Stanley Mouse",
+        "Robert Crumb",
+        "Rick Griffin"
+      ],
+      "answer": "Robert Crumb",
+      "reveal": "Underground cartoonist Robert Crumb drew the comic-strip cover.",
+      "category": "Album Art",
+      "difficulty": "Medium",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-056",
+      "question": "Which producer worked with the Doors on their classic early albums?",
+      "choices": [
+        "Tom Dowd",
+        "Bones Howe",
+        "Lou Adler",
+        "Paul A. Rothchild"
+      ],
+      "answer": "Paul A. Rothchild",
+      "reveal": "Paul A. Rothchild produced the Doors’ first five studio albums.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-057",
+      "question": "Who played bass on many Doors studio recordings despite the band having no regular bassist onstage?",
+      "choices": [
+        "Larry Knechtel",
+        "Carol Kaye",
+        "Duck Dunn",
+        "James Jamerson"
+      ],
+      "answer": "Larry Knechtel",
+      "reveal": "Session musicians augmented the Doors in the studio; Larry Knechtel played bass on parts of the debut.",
+      "category": "Studio Stories",
+      "difficulty": "Hard",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-058",
+      "question": "Which Wrecking Crew bassist played on countless Los Angeles pop sessions?",
+      "choices": [
+        "Suzi Quatro",
+        "Carol Kaye",
+        "Kim Gordon",
+        "Tina Weymouth"
+      ],
+      "answer": "Carol Kaye",
+      "reveal": "Carol Kaye became one of the most prolific session bassists of the era.",
+      "category": "Session Players",
+      "difficulty": "Medium",
+      "year": 1960,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-059",
+      "question": "Which drummer was a key member of the Wrecking Crew and later recorded with John Lennon?",
+      "choices": [
+        "Earl Palmer",
+        "Hal Blaine",
+        "Jim Keltner",
+        "Jim Gordon"
+      ],
+      "answer": "Hal Blaine",
+      "reveal": "Hal Blaine’s session credits span an extraordinary range of 1960s and 1970s hits.",
+      "category": "Session Players",
+      "difficulty": "Medium",
+      "year": 1960,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-060",
+      "question": "Which bassist is most associated with Motown’s Funk Brothers and lines like “My Girl”?",
+      "choices": [
+        "James Jamerson",
+        "Willie Weeks",
+        "Bob Babbitt",
+        "Duck Dunn"
+      ],
+      "answer": "James Jamerson",
+      "reveal": "James Jamerson transformed electric bass playing from inside Motown’s house band.",
+      "category": "Session Players",
+      "difficulty": "Easy",
+      "year": 1960,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-061",
+      "question": "What was the name of Motown’s studio band?",
+      "choices": [
+        "The Swampers",
+        "Booker T. & the M.G.’s",
+        "The Funk Brothers",
+        "The Wrecking Crew"
+      ],
+      "answer": "The Funk Brothers",
+      "reveal": "The Funk Brothers played on a huge share of Motown’s classic recordings.",
+      "category": "Session Players",
+      "difficulty": "Easy",
+      "year": 1960,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-062",
+      "question": "What was the nickname for the Muscle Shoals Rhythm Section?",
+      "choices": [
+        "The Swampers",
+        "The Funk Brothers",
+        "The Section",
+        "The A-Team"
+      ],
+      "answer": "The Swampers",
+      "reveal": "The Muscle Shoals Rhythm Section became known as the Swampers.",
+      "category": "Session Players",
+      "difficulty": "Medium",
+      "year": 1969,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-063",
+      "question": "Which singer recorded “Respect” before Aretha Franklin?",
+      "choices": [
+        "Sam Cooke",
+        "Solomon Burke",
+        "Otis Redding",
+        "Wilson Pickett"
+      ],
+      "answer": "Otis Redding",
+      "reveal": "Otis Redding wrote and released “Respect”; Franklin radically transformed it in 1967.",
+      "category": "Song Origins",
+      "difficulty": "Easy",
+      "year": 1965,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-064",
+      "question": "Who wrote “Piece of My Heart,” first recorded by Erma Franklin?",
+      "choices": [
+        "Goffin and King",
+        "Mann and Weil",
+        "Holland–Dozier–Holland",
+        "Jerry Ragovoy and Bert Berns"
+      ],
+      "answer": "Jerry Ragovoy and Bert Berns",
+      "reveal": "Erma Franklin recorded the song before Big Brother and Janis Joplin made it a rock staple.",
+      "category": "Song Origins",
+      "difficulty": "Hard",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-065",
+      "question": "Which singer first released “Hound Dog” before Elvis Presley?",
+      "choices": [
+        "LaVern Baker",
+        "Big Mama Thornton",
+        "Etta James",
+        "Ruth Brown"
+      ],
+      "answer": "Big Mama Thornton",
+      "reveal": "Big Mama Thornton’s original recording preceded Elvis Presley’s version by several years.",
+      "category": "Song Origins",
+      "difficulty": "Easy",
+      "year": 1952,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-066",
+      "question": "Who wrote “Hound Dog”?",
+      "choices": [
+        "Jerry Leiber and Mike Stoller",
+        "Holland–Dozier–Holland",
+        "Goffin and King",
+        "Doc Pomus and Mort Shuman"
+      ],
+      "answer": "Jerry Leiber and Mike Stoller",
+      "reveal": "Leiber and Stoller wrote the song for Big Mama Thornton.",
+      "category": "Song Origins",
+      "difficulty": "Medium",
+      "year": 1952,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-067",
+      "question": "Which songwriter wrote “Nothing Compares 2 U”?",
+      "choices": [
+        "Jimmy Jam",
+        "Prince",
+        "Sinead O’Connor",
+        "Morris Day"
+      ],
+      "answer": "Prince",
+      "reveal": "Prince wrote the song; the Family recorded it before Sinéad O’Connor’s global hit.",
+      "category": "Song Origins",
+      "difficulty": "Easy",
+      "year": 1985,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-068",
+      "question": "Which band originally recorded “Tainted Love”?",
+      "choices": [
+        "Shocking Blue",
+        "The Supremes",
+        "Gloria Jones",
+        "Soft Cell"
+      ],
+      "answer": "Gloria Jones",
+      "reveal": "Gloria Jones first recorded “Tainted Love”; Soft Cell’s synth-pop cover became the international hit.",
+      "category": "Song Origins",
+      "difficulty": "Medium",
+      "year": 1964,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-069",
+      "question": "Who wrote “I Love Rock ’n Roll” before Joan Jett made it famous?",
+      "choices": [
+        "Chinn and Chapman",
+        "Nicky Chinn and Suzi Quatro",
+        "Joan Jett and Kenny Laguna",
+        "Alan Merrill and Jake Hooker"
+      ],
+      "answer": "Alan Merrill and Jake Hooker",
+      "reveal": "The Arrows first recorded the song; Joan Jett later turned it into a massive hit.",
+      "category": "Song Origins",
+      "difficulty": "Hard",
+      "year": 1975,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-070",
+      "question": "Which band first released “The Man Who Sold the World” as a hit cover in 1974?",
+      "choices": [
+        "Lulu",
+        "Mott the Hoople",
+        "T. Rex",
+        "Roxy Music"
+      ],
+      "answer": "Lulu",
+      "reveal": "Lulu recorded Bowie’s song with Bowie involved in the session and production.",
+      "category": "Covers",
+      "difficulty": "Hard",
+      "year": 1974,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-071",
+      "question": "Who wrote Mott the Hoople’s “All the Young Dudes”?",
+      "choices": [
+        "Lou Reed",
+        "David Bowie",
+        "Mick Ronson",
+        "Ian Hunter"
+      ],
+      "answer": "David Bowie",
+      "reveal": "Bowie gave Mott the Hoople the song as the band was considering breaking up.",
+      "category": "Song Origins",
+      "difficulty": "Easy",
+      "year": 1972,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-072",
+      "question": "Which Bowie song did Mott the Hoople reportedly turn down before receiving “All the Young Dudes”?",
+      "choices": [
+        "Changes",
+        "Moonage Daydream",
+        "Starman",
+        "Suffragette City"
+      ],
+      "answer": "Suffragette City",
+      "reveal": "Bowie first offered another Ziggy-era song before writing/giving them “All the Young Dudes.”",
+      "category": "What If?",
+      "difficulty": "Hard",
+      "year": 1972,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-073",
+      "question": "Which producer made T. Rex’s classic glam-era records with Marc Bolan?",
+      "choices": [
+        "Gus Dudgeon",
+        "Tony Visconti",
+        "Roy Thomas Baker",
+        "Mickie Most"
+      ],
+      "answer": "Tony Visconti",
+      "reveal": "Tony Visconti produced T. Rex during their defining glam-rock run.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1971,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-074",
+      "question": "Who produced Queen’s A Night at the Opera with the band?",
+      "choices": [
+        "Roy Thomas Baker",
+        "Tony Visconti",
+        "Mutt Lange",
+        "Gus Dudgeon"
+      ],
+      "answer": "Roy Thomas Baker",
+      "reveal": "Roy Thomas Baker co-produced Queen’s elaborate breakthrough album.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1975,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-075",
+      "question": "Which Queen song famously contains no synthesizers despite its huge layered sound?",
+      "choices": [
+        "Bohemian Rhapsody",
+        "The Prophet’s Song",
+        "Somebody to Love",
+        "Killer Queen"
+      ],
+      "answer": "Bohemian Rhapsody",
+      "reveal": "The dense arrangement was built from voices, guitars, piano, bass and drums rather than synths.",
+      "category": "Studio Stories",
+      "difficulty": "Medium",
+      "year": 1975,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-076",
+      "question": "Who produced the Cars’ debut album?",
+      "choices": [
+        "Brian Eno",
+        "Roy Thomas Baker",
+        "Mutt Lange",
+        "Todd Rundgren"
+      ],
+      "answer": "Roy Thomas Baker",
+      "reveal": "Roy Thomas Baker brought his polished, layered production approach to The Cars.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1978,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-077",
+      "question": "Which producer made the Ramones’ End of the Century?",
+      "choices": [
+        "Todd Rundgren",
+        "Phil Spector",
+        "Sire's Craig Leon",
+        "Tony Bongiovi"
+      ],
+      "answer": "Phil Spector",
+      "reveal": "The pairing of the Ramones with Wall-of-Sound architect Phil Spector was famously combustible.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1980,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-078",
+      "question": "Who produced Patti Smith’s Horses?",
+      "choices": [
+        "Tom Wilson",
+        "John Cale",
+        "Todd Rundgren",
+        "Brian Eno"
+      ],
+      "answer": "John Cale",
+      "reveal": "Velvet Underground alumnus John Cale produced Smith’s landmark debut.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1975,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-079",
+      "question": "Who produced the Modern Lovers’ original recordings later compiled as their debut album?",
+      "choices": [
+        "Todd Rundgren",
+        "John Cale",
+        "Jonathan Richman",
+        "Kim Fowley"
+      ],
+      "answer": "John Cale",
+      "reveal": "John Cale produced key early Modern Lovers sessions.",
+      "category": "Production",
+      "difficulty": "Hard",
+      "year": 1972,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-080",
+      "question": "Which former Velvet Underground member produced the Stooges’ debut album?",
+      "choices": [
+        "John Cale",
+        "Lou Reed",
+        "Andy Warhol",
+        "Nico"
+      ],
+      "answer": "John Cale",
+      "reveal": "John Cale produced The Stooges, linking two foundational proto-punk worlds.",
+      "category": "Production",
+      "difficulty": "Medium",
+      "year": 1969,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-081",
+      "question": "Which musician produced the first Nico solo album Chelsea Girl?",
+      "choices": [
+        "Tom Wilson",
+        "Lou Reed",
+        "John Cale",
+        "Andy Warhol"
+      ],
+      "answer": "Tom Wilson",
+      "reveal": "Tom Wilson produced Chelsea Girl; its ornate overdubs were famously not to Nico’s taste.",
+      "category": "Production",
+      "difficulty": "Hard",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-082",
+      "question": "Which Velvet Underground album was produced by Tom Wilson?",
+      "choices": [
+        "Squeeze",
+        "The Velvet Underground",
+        "Loaded",
+        "White Light/White Heat"
+      ],
+      "answer": "White Light/White Heat",
+      "reveal": "Tom Wilson is credited as producer of the band’s abrasive second album.",
+      "category": "Production",
+      "difficulty": "Hard",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-083",
+      "question": "Which producer recorded the Velvet Underground’s early sessions and also worked with Bob Dylan?",
+      "choices": [
+        "John Hammond",
+        "Bob Johnston",
+        "Tom Wilson",
+        "George Martin"
+      ],
+      "answer": "Tom Wilson",
+      "reveal": "Tom Wilson’s career connects Dylan, Simon & Garfunkel, Frank Zappa and the Velvet Underground.",
+      "category": "Connections",
+      "difficulty": "Medium",
+      "year": 1966,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-084",
+      "question": "Which Simon & Garfunkel song became a hit after producer Tom Wilson added electric instruments without the duo present?",
+      "choices": [
+        "Homeward Bound",
+        "A Hazy Shade of Winter",
+        "The Sound of Silence",
+        "I Am a Rock"
+      ],
+      "answer": "The Sound of Silence",
+      "reveal": "Wilson overdubbed electric backing onto the acoustic recording, helping turn it into a hit.",
+      "category": "Studio Stories",
+      "difficulty": "Medium",
+      "year": 1965,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-085",
+      "question": "Who played drums on the Byrds’ hit recording of “Mr. Tambourine Man”?",
+      "choices": [
+        "Hal Blaine",
+        "Michael Clarke",
+        "Jim Gordon",
+        "Earl Palmer"
+      ],
+      "answer": "Hal Blaine",
+      "reveal": "Most of the instrumental backing on the hit single was played by Los Angeles session musicians.",
+      "category": "Session Players",
+      "difficulty": "Hard",
+      "year": 1965,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-086",
+      "question": "Which Byrd played 12-string guitar on “Mr. Tambourine Man”?",
+      "choices": [
+        "Gene Clark",
+        "David Crosby",
+        "Chris Hillman",
+        "Roger McGuinn"
+      ],
+      "answer": "Roger McGuinn",
+      "reveal": "McGuinn’s Rickenbacker 12-string supplied the record’s defining jangle.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1965,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-087",
+      "question": "Who wrote the Byrds’ “Eight Miles High” with Gene Clark and David Crosby?",
+      "choices": [
+        "Roger McGuinn",
+        "Gram Parsons",
+        "Chris Hillman",
+        "Clarence White"
+      ],
+      "answer": "Roger McGuinn",
+      "reveal": "The song is credited to Gene Clark, Jim McGuinn (later Roger), and David Crosby.",
+      "category": "Song Origins",
+      "difficulty": "Hard",
+      "year": 1966,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-088",
+      "question": "Which jazz musician strongly influenced the guitar approach on “Eight Miles High”?",
+      "choices": [
+        "Miles Davis",
+        "John Coltrane",
+        "Thelonious Monk",
+        "Charles Mingus"
+      ],
+      "answer": "John Coltrane",
+      "reveal": "McGuinn has cited Coltrane as a key influence on the song’s spiraling guitar language.",
+      "category": "Hidden Connections",
+      "difficulty": "Medium",
+      "year": 1966,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-089",
+      "question": "Which country-rock pioneer joined the Byrds for Sweetheart of the Rodeo?",
+      "choices": [
+        "Gram Parsons",
+        "Doug Sahm",
+        "Gene Clark",
+        "Stephen Stills"
+      ],
+      "answer": "Gram Parsons",
+      "reveal": "Gram Parsons helped push the Byrds decisively toward country music.",
+      "category": "Lineups",
+      "difficulty": "Easy",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-090",
+      "question": "What band did Gram Parsons form with Chris Hillman after leaving the Byrds?",
+      "choices": [
+        "Manassas",
+        "The Flying Burrito Brothers",
+        "New Riders of the Purple Sage",
+        "Poco"
+      ],
+      "answer": "The Flying Burrito Brothers",
+      "reveal": "Parsons and Hillman carried their country-rock ideas into the Flying Burrito Brothers.",
+      "category": "Connections",
+      "difficulty": "Medium",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-091",
+      "question": "Who sang harmony with Gram Parsons on his solo albums GP and Grievous Angel?",
+      "choices": [
+        "Bonnie Raitt",
+        "Emmylou Harris",
+        "Linda Ronstadt",
+        "Joni Mitchell"
+      ],
+      "answer": "Emmylou Harris",
+      "reveal": "Parsons helped introduce Emmylou Harris to a wider rock audience through their duets.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1973,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-092",
+      "question": "Which guitarist played with John Mayall’s Bluesbreakers before forming Fleetwood Mac?",
+      "choices": [
+        "Peter Green",
+        "Paul Kossoff",
+        "Alvin Lee",
+        "Mick Taylor"
+      ],
+      "answer": "Peter Green",
+      "reveal": "Peter Green followed Eric Clapton through Mayall’s band before forming Fleetwood Mac.",
+      "category": "Connections",
+      "difficulty": "Medium",
+      "year": 1967,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-093",
+      "question": "Which Fleetwood Mac founder wrote the instrumental “Albatross”?",
+      "choices": [
+        "Jeremy Spencer",
+        "Mick Fleetwood",
+        "Peter Green",
+        "Danny Kirwan"
+      ],
+      "answer": "Peter Green",
+      "reveal": "Peter Green wrote Fleetwood Mac’s dreamy instrumental chart-topper.",
+      "category": "Song Origins",
+      "difficulty": "Medium",
+      "year": 1968,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-094",
+      "question": "Which Fleetwood Mac song later inspired part of the Beatles’ “Sun King” sound, according to George Harrison?",
+      "choices": [
+        "Man of the World",
+        "Black Magic Woman",
+        "Oh Well",
+        "Albatross"
+      ],
+      "answer": "Albatross",
+      "reveal": "Harrison explicitly connected the languid guitar atmosphere of “Sun King” to Fleetwood Mac’s “Albatross.”",
+      "category": "Hidden Connections",
+      "difficulty": "Hard",
+      "year": 1969,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-095",
+      "question": "Who played the famous guitar solo on the Carpenters’ “Goodbye to Love”?",
+      "choices": [
+        "Larry Carlton",
+        "Glen Campbell",
+        "Dean Parks",
+        "Tony Peluso"
+      ],
+      "answer": "Tony Peluso",
+      "reveal": "Tony Peluso’s fuzz-guitar solo was startlingly heavy for a Carpenters single.",
+      "category": "Personnel",
+      "difficulty": "Hard",
+      "year": 1972,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-096",
+      "question": "Which guitarist played the solo on Christopher Cross’s “Ride Like the Wind”?",
+      "choices": [
+        "Lee Ritenour",
+        "Larry Carlton",
+        "Steve Lukather",
+        "Jay Graydon"
+      ],
+      "answer": "Larry Carlton",
+      "reveal": "Larry Carlton supplied the guitar solo on the recording.",
+      "category": "Personnel",
+      "difficulty": "Hard",
+      "year": 1980,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-097",
+      "question": "Which guitarist played the solo on Steely Dan’s “Peg”?",
+      "choices": [
+        "Larry Carlton",
+        "Elliott Randall",
+        "Dean Parks",
+        "Jay Graydon"
+      ],
+      "answer": "Jay Graydon",
+      "reveal": "After multiple players tried the part, Jay Graydon’s solo made the final record.",
+      "category": "Personnel",
+      "difficulty": "Hard",
+      "year": 1977,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-098",
+      "question": "Which drummer played the famous half-time shuffle on Steely Dan’s “Home at Last”?",
+      "choices": [
+        "Jeff Porcaro",
+        "Steve Gadd",
+        "Bernard Purdie",
+        "Jim Keltner"
+      ],
+      "answer": "Bernard Purdie",
+      "reveal": "Bernard Purdie’s groove is a classic example of the Purdie shuffle.",
+      "category": "Personnel",
+      "difficulty": "Hard",
+      "year": 1977,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-099",
+      "question": "Which drummer played on Paul Simon’s “50 Ways to Leave Your Lover”?",
+      "choices": [
+        "Bernard Purdie",
+        "Steve Gadd",
+        "Jeff Porcaro",
+        "Jim Keltner"
+      ],
+      "answer": "Steve Gadd",
+      "reveal": "Steve Gadd created the instantly recognizable military-flavored drum pattern.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1975,
+      "status": "review",
+      "sources": []
+    },
+    {
+      "id": "DTN-100",
+      "question": "Who played drums on Toto’s “Rosanna”?",
+      "choices": [
+        "Jeff Porcaro",
+        "Bernard Purdie",
+        "Jim Gordon",
+        "Steve Gadd"
+      ],
+      "answer": "Jeff Porcaro",
+      "reveal": "Jeff Porcaro’s groove blended shuffle influences into one of pop’s most studied drum parts.",
+      "category": "Personnel",
+      "difficulty": "Medium",
+      "year": 1982,
+      "status": "review",
+      "sources": []
+    }
+  ]
+}
