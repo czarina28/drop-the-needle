@@ -1,76 +1,48 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#11100f">
 <title>Drop the Needle</title>
 <style>
 :root{--bg:#11100f;--panel:#1b1917;--ink:#f2eadf;--muted:#aaa095;--gold:#d7a84b;--line:#3b352f;--good:#8eae80;--bad:#c2776b}
-*{box-sizing:border-box} body{margin:0;min-height:100vh;background:radial-gradient(circle at 15% 10%,#29231b 0,transparent 28%),radial-gradient(circle at 85% 85%,#1d2524 0,transparent 26%),var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;display:grid;place-items:center;padding:24px}
-.shell{width:min(940px,100%)} .top{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:16px}
+*{box-sizing:border-box} body{margin:0;min-height:100vh;background:radial-gradient(circle at 15% 10%,#29231b 0,transparent 28%),radial-gradient(circle at 85% 85%,#1d2524 0,transparent 26%),var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;display:grid;place-items:center;padding:max(24px,env(safe-area-inset-top)) max(24px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(24px,env(safe-area-inset-left))}
+.shell{width:min(940px,100%)} .top{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:16px}.top.intro-hidden{display:none}
 .brand{font:clamp(30px,5vw,52px) Georgia,serif;letter-spacing:-1.5px} .brand span{color:var(--gold)} .kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
 .stats{display:flex;gap:16px;color:var(--muted);font-size:13px} .stats b{color:var(--ink)} .progress{height:4px;background:#292622;border-radius:5px;overflow:hidden;margin-bottom:14px} .progress i{display:block;height:100%;background:var(--gold);transition:.25s}
 .card{background:linear-gradient(145deg,#211e1bfa,#161513fa);border:1px solid var(--line);border-radius:18px;min-height:535px;padding:clamp(24px,5vw,48px);box-shadow:0 28px 80px #0006}
 .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px} .pill{border:1px solid var(--line);border-radius:99px;padding:5px 9px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)} .status{margin-left:auto}
 .q{font:clamp(27px,4vw,42px)/1.15 Georgia,serif;max-width:790px;margin:0 0 30px} label{display:block;color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
-.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px} button{border:1px solid #4a433b;background:#292622;color:var(--ink);border-radius:10px;padding:16px 18px;font-weight:700;font-size:16px;cursor:pointer;transition:.15s;text-align:left} button:hover{transform:translateY(-1px);border-color:#74695d;background:#302b26} button.primary{background:var(--gold);border-color:var(--gold);color:#17130d;text-align:center} button.correct{border-color:var(--good);background:#263025} button.wrong{border-color:var(--bad);background:#342522}
-.reveal{display:none;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)} .reveal.show{display:block} .verdict{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:8px} .good{color:var(--good)} .bad{color:var(--bad)} .biganswer{font:32px Georgia,serif;color:var(--gold);margin-bottom:10px} .fact{color:#d6cdc2;line-height:1.55;max-width:760px} .nextrow{display:flex;justify-content:space-between;align-items:center;margin-top:24px;gap:12px} .points{font-size:13px;color:var(--muted)}
-.end{text-align:center;padding:30px 0} .end h1{font:50px Georgia,serif;margin:0 0 10px} .end .score{font:90px Georgia,serif;color:var(--gold);line-height:1} .end p{color:var(--muted)} .breakdown{display:flex;justify-content:center;gap:30px;margin:26px 0} .breakdown b{display:block;font-size:24px;color:var(--ink)} .footer{text-align:center;margin-top:12px;color:#756e66;font-size:11px;letter-spacing:.06em}
-@media(max-width:620px){.choices{grid-template-columns:1fr}.stats{flex-direction:column;gap:2px;text-align:right}.card{min-height:650px}}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px} button{border:1px solid #4a433b;background:#292622;color:var(--ink);border-radius:10px;padding:16px 18px;font-weight:700;font-size:16px;cursor:pointer;transition:.15s;text-align:left;min-height:54px} button:hover{transform:translateY(-1px);border-color:#74695d;background:#302b26} button.primary{background:var(--gold);border-color:var(--gold);color:#17130d;text-align:center} button.correct{border-color:var(--good);background:#263025;animation:answerPop .22s ease-out} button.wrong{border-color:var(--bad);background:#342522;animation:answerPop .22s ease-out}
+@keyframes answerPop{50%{transform:scale(1.012)}}
+.reveal{display:none;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)} .reveal.show{display:block;animation:revealIn .28s ease-out} @keyframes revealIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}} .verdict{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:8px} .good{color:var(--good)} .bad{color:var(--bad)} .biganswer{font:32px Georgia,serif;color:var(--gold);margin-bottom:10px} .fact{color:#d6cdc2;line-height:1.55;max-width:760px} .nextrow{display:flex;justify-content:space-between;align-items:center;margin-top:24px;gap:12px} .points{font-size:13px;color:var(--muted)}
+.intro,.end{text-align:center;padding:34px 0}.intro-mark{width:92px;height:92px;border:1px solid var(--line);border-radius:50%;margin:4px auto 24px;display:grid;place-items:center;position:relative}.intro-mark:before{content:'';width:48px;height:48px;border:1px solid #5b5147;border-radius:50%}.intro-mark:after{content:'';position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold)}.intro h1{font:clamp(44px,8vw,76px)/.95 Georgia,serif;margin:0 0 18px;letter-spacing:-2px}.intro h1 span{color:var(--gold)}.intro .lede{font:clamp(17px,2.5vw,21px)/1.5 Georgia,serif;color:#d6cdc2;margin:0 auto 8px;max-width:570px}.intro .rules{color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin:22px 0 28px}.intro button{min-width:230px}
+.end h1{font:50px Georgia,serif;margin:0 0 10px} .end .score{font:90px Georgia,serif;color:var(--gold);line-height:1} .end p{color:var(--muted)} .end .rating{font:clamp(22px,4vw,32px) Georgia,serif;color:#d6cdc2;margin:18px auto 0}.breakdown{display:flex;justify-content:center;gap:30px;margin:26px 0} .breakdown b{display:block;font-size:24px;color:var(--ink)} .footer{text-align:center;margin-top:12px;color:#756e66;font-size:11px;letter-spacing:.06em}
+@media(max-width:620px){body{display:block;padding:18px max(14px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))}.top{align-items:flex-end}.brand{font-size:34px}.kicker{font-size:9px;letter-spacing:.15em}.choices{grid-template-columns:1fr}.stats{flex-direction:column;gap:2px;text-align:right;font-size:12px}.card{min-height:0;padding:26px 20px;border-radius:14px}.q{font-size:29px;margin-bottom:24px}.meta{margin-bottom:22px}.intro{padding:24px 0}.intro-mark{width:76px;height:76px;margin-bottom:20px}.intro h1{font-size:52px}.nextrow{align-items:stretch;flex-direction:column}.nextrow button{width:100%}.breakdown{gap:18px}.footer{line-height:1.5}}
 </style>
 </head>
 <body><div class="shell">
-<div class="top"><div><div class="kicker">Music trivia for people who listen too closely</div><div class="brand">Drop <span>the</span> Needle</div></div><div class="stats"><span>Score <b id="score">0</b></span><span>Streak <b id="streak">0</b></span><span id="counter"></span></div></div>
+<div class="top" id="top"><div><div class="kicker">Music trivia for people who listen too closely</div><div class="brand">Drop <span>the</span> Needle</div></div><div class="stats" id="stats"><span>Score <b id="score">0</b></span><span>Streak <b id="streak">0</b></span><span id="counter"></span></div></div>
 <div class="progress"><i id="bar"></i></div><main class="card" id="card"></main>
-<div class="footer">10 RANDOM QUESTIONS FROM THE 100-QUESTION CURATED BANK · NO REPEATS PER ROUND</div>
+<div class="footer">10 RANDOM QUESTIONS · DEEP CUTS ENCOURAGED · NO REPEATS PER ROUND</div>
 </div>
 <script>
 let BANK=[];
 const ROUND_SIZE=10;
+const RELEASE_HOLDS=new Set(['DTN-017','DTN-021','DTN-030','DTN-037','DTN-057','DTN-079','DTN-083']);
 function shuffle(a){a=[...a];for(let j=a.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[a[j],a[k]]=[a[k],a[j]]}return a}
 let round=[],i=0,score=0,streak=0,correct=0,answered=false;
 const card=document.getElementById('card');
-function newRound(){round=shuffle(BANK).slice(0,ROUND_SIZE);i=score=streak=correct=0;document.getElementById('score').textContent=0;document.getElementById('streak').textContent=0;render()}
-function render(){
- const x=round[i];answered=false;
- document.getElementById('counter').textContent=`${i+1} / ${ROUND_SIZE}`;
- document.getElementById('bar').style.width=`${(i/ROUND_SIZE)*100}%`;
- const choices=shuffle(x.choices);
- card.innerHTML=`<div class="meta"><span class="pill">${x.category}</span><span class="pill">${x.difficulty}</span><span class="pill">${x.year}</span><span class="pill status">${x.id}</span></div>
- <h1 class="q">${x.question}</h1><label>Pick one</label><div class="choices">${choices.map(c=>`<button data-a="${encodeURIComponent(c)}">${c}</button>`).join('')}</div><section class="reveal" id="reveal"></section>`;
- document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>choose(b));
-}
-function choose(btn){
- if(answered)return;answered=true;const x=round[i],chosen=decodeURIComponent(btn.dataset.a),ok=chosen===x.answer;
- document.querySelectorAll('[data-a]').forEach(b=>{b.disabled=true;if(decodeURIComponent(b.dataset.a)===x.answer)b.classList.add('correct')});
- if(!ok)btn.classList.add('wrong'); if(ok){score++;correct++;streak++}else streak=0;
- document.getElementById('score').textContent=score;document.getElementById('streak').textContent=streak;
- const r=document.getElementById('reveal');r.classList.add('show');
- r.innerHTML=`<div class="verdict ${ok?'good':'bad'}">${ok?'✓ Correct':'✕ Not this time'}</div><div class="biganswer">${x.answer}</div><div class="fact">${x.reveal}</div>
- <div class="nextrow"><span class="points">${ok?'+1 point':'0 points'} · ${x.status.toUpperCase()}</span><button class="primary" id="next">${i===ROUND_SIZE-1?'See results':'Next →'}</button></div>`;
- document.getElementById('next').onclick=next;
-}
+const stats=document.getElementById('stats');
+const topbar=document.getElementById('top');
+function intro(){topbar.classList.add('intro-hidden');stats.style.visibility='hidden';document.getElementById('bar').style.width='0';card.innerHTML=`<div class="intro"><div class="intro-mark"></div><div class="kicker">Ten questions. No mercy.</div><h1>Drop <span>the</span> Needle</h1><p class="lede">Records, sessions, strange credits, deep cuts and the stories hiding between the grooves.</p><div class="rules">10 questions · 1 point each · trust your ears</div><button class="primary" id="start">Drop the needle →</button></div>`;document.getElementById('start').onclick=newRound}
+function newRound(){topbar.classList.remove('intro-hidden');round=shuffle(BANK).slice(0,ROUND_SIZE);i=score=streak=correct=0;stats.style.visibility='visible';document.getElementById('score').textContent=0;document.getElementById('streak').textContent=0;render()}
+function render(){const x=round[i];answered=false;document.getElementById('counter').textContent=`${i+1} / ${ROUND_SIZE}`;document.getElementById('bar').style.width=`${(i/ROUND_SIZE)*100}%`;const choices=shuffle(x.choices);card.innerHTML=`<div class="meta"><span class="pill">${x.category}</span><span class="pill">${x.difficulty}</span><span class="pill">${x.year}</span><span class="pill status">${x.id}</span></div><h1 class="q">${x.question}</h1><label>Pick one</label><div class="choices">${choices.map(c=>`<button data-a="${encodeURIComponent(c)}">${c}</button>`).join('')}</div><section class="reveal" id="reveal"></section>`;document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>choose(b))}
+function choose(btn){if(answered)return;answered=true;const x=round[i],chosen=decodeURIComponent(btn.dataset.a),ok=chosen===x.answer;document.querySelectorAll('[data-a]').forEach(b=>{b.disabled=true;if(decodeURIComponent(b.dataset.a)===x.answer)b.classList.add('correct')});if(!ok)btn.classList.add('wrong');if(ok){score++;correct++;streak++}else streak=0;document.getElementById('score').textContent=score;document.getElementById('streak').textContent=streak;const r=document.getElementById('reveal');r.classList.add('show');r.innerHTML=`<div class="verdict ${ok?'good':'bad'}">${ok?'✓ Correct':'✕ Not this time'}</div><div class="biganswer">${x.answer}</div><div class="fact">${x.reveal}</div><div class="nextrow"><span class="points">${ok?'+1 point':'0 points'}</span><button class="primary" id="next">${i===ROUND_SIZE-1?'See results':'Next →'}</button></div>`;document.getElementById('next').onclick=next}
 function next(){i++;if(i>=ROUND_SIZE)finish();else render()}
-function finish(){
- document.getElementById('bar').style.width='100%';document.getElementById('counter').textContent=`${ROUND_SIZE} / ${ROUND_SIZE}`;
- card.innerHTML=`<div class="end"><div class="kicker">Needle lifted</div><h1>That’s the round.</h1><div class="score">${score}</div><p>out of ${ROUND_SIZE}</p>
- <div class="breakdown"><div><b>${correct}</b>correct</div><div><b>${ROUND_SIZE-correct}</b>missed</div><div><b>${Math.round(correct/ROUND_SIZE*100)}%</b>accuracy</div></div>
- <button class="primary" id="again">Play another 10</button><p>A fresh random round will be drawn from Bank v1.</p></div>`;
- document.getElementById('again').onclick=newRound;
-}
-async function boot(){
-  try {
-    const response = await fetch("data/questions.json");
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
-    BANK = payload.questions || [];
-    if (BANK.length < ROUND_SIZE) throw new Error("Question bank is too small.");
-    newRound();
-  } catch (err) {
-    card.innerHTML = `<div class="end"><h1>Question bank unavailable.</h1>
-      <p>Run this project through a local web server rather than opening index.html directly.</p>
-      <p><code>python -m http.server 8000</code></p></div>`;
-    console.error(err);
-  }
-}
+function rating(n){if(n<=3)return 'You bought the T-shirt.';if(n<=5)return 'You know your way around a record store.';if(n<=7)return 'Okay. You listen.';if(n<=9)return 'Record-store employee territory.';return 'Annoyingly knowledgeable.'}
+function finish(){document.getElementById('bar').style.width='100%';document.getElementById('counter').textContent=`${ROUND_SIZE} / ${ROUND_SIZE}`;card.innerHTML=`<div class="end"><div class="kicker">Needle lifted</div><h1>That’s the round.</h1><div class="score">${score}</div><p>out of ${ROUND_SIZE}</p><div class="rating">${rating(score)}</div><div class="breakdown"><div><b>${correct}</b>correct</div><div><b>${ROUND_SIZE-correct}</b>missed</div><div><b>${Math.round(correct/ROUND_SIZE*100)}%</b>accuracy</div></div><button class="primary" id="again">Play another 10</button><p>A fresh round. Same dangerous confidence.</p></div>`;document.getElementById('again').onclick=newRound}
+function releasePatch(q){q={...q};if(q.id==='DTN-035')q.question='Who wrote the Monkees’ “I’m a Believer”?';if(q.id==='DTN-065')q.year=1953;if(q.id==='DTN-068')q.question='Who originally recorded “Tainted Love”?';if(q.id==='DTN-070')q.question='Which singer released a hit cover of “The Man Who Sold the World” in 1974?';if(q.id==='DTN-081')q.question='Who produced Nico’s debut solo album Chelsea Girl?';if(q.id==='DTN-096'){q.question='Who played the guitar solo on Christopher Cross’s “Ride Like the Wind”?';q.choices=['Lee Ritenour','Larry Carlton','Christopher Cross','Jay Graydon'];q.answer='Christopher Cross';q.reveal='Christopher Cross played the guitar solo himself; Michael McDonald supplied the prominent backing vocals.'}return q}
+async function boot(){try{const response=await fetch('data/questions.json');if(!response.ok)throw new Error(`HTTP ${response.status}`);const payload=await response.json();BANK=(payload.questions||[]).filter(q=>!RELEASE_HOLDS.has(q.id)).map(releasePatch);if(BANK.length<ROUND_SIZE)throw new Error('Question bank is too small.');intro()}catch(err){card.innerHTML=`<div class="end"><h1>Question bank unavailable.</h1><p>Please try again in a moment.</p></div>`;console.error(err)}}
 boot();
 </script></body></html>
