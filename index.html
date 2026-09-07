@@ -33,44 +33,13 @@ function shuffle(a){a=[...a];for(let j=a.length-1;j>0;j--){const k=Math.floor(Ma
 let round=[],i=0,score=0,streak=0,correct=0,answered=false;
 const card=document.getElementById('card');
 const stats=document.getElementById('stats');
-function intro(){
- stats.style.visibility='hidden';document.getElementById('bar').style.width='0';
- card.innerHTML=`<div class="intro"><div class="intro-mark"></div><div class="kicker">Ten questions. No mercy.</div><h1>Drop <span>the</span> Needle</h1><p class="lede">Records, sessions, strange credits, deep cuts and the stories hiding between the grooves.</p><div class="rules">10 questions · 1 point each · trust your ears</div><button class="primary" id="start">Drop the needle →</button></div>`;
- document.getElementById('start').onclick=newRound;
-}
+function intro(){stats.style.visibility='hidden';document.getElementById('bar').style.width='0';card.innerHTML=`<div class="intro"><div class="intro-mark"></div><div class="kicker">Ten questions. No mercy.</div><h1>Drop <span>the</span> Needle</h1><p class="lede">Records, sessions, strange credits, deep cuts and the stories hiding between the grooves.</p><div class="rules">10 questions · 1 point each · trust your ears</div><button class="primary" id="start">Drop the needle →</button></div>`;document.getElementById('start').onclick=newRound}
 function newRound(){round=shuffle(BANK).slice(0,ROUND_SIZE);i=score=streak=correct=0;stats.style.visibility='visible';document.getElementById('score').textContent=0;document.getElementById('streak').textContent=0;render()}
-function render(){
- const x=round[i];answered=false;
- document.getElementById('counter').textContent=`${i+1} / ${ROUND_SIZE}`;
- document.getElementById('bar').style.width=`${(i/ROUND_SIZE)*100}%`;
- const choices=shuffle(x.choices);
- card.innerHTML=`<div class="meta"><span class="pill">${x.category}</span><span class="pill">${x.difficulty}</span><span class="pill">${x.year}</span><span class="pill status">${x.id}</span></div><h1 class="q">${x.question}</h1><label>Pick one</label><div class="choices">${choices.map(c=>`<button data-a="${encodeURIComponent(c)}">${c}</button>`).join('')}</div><section class="reveal" id="reveal"></section>`;
- document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>choose(b));
-}
-function choose(btn){
- if(answered)return;answered=true;const x=round[i],chosen=decodeURIComponent(btn.dataset.a),ok=chosen===x.answer;
- document.querySelectorAll('[data-a]').forEach(b=>{b.disabled=true;if(decodeURIComponent(b.dataset.a)===x.answer)b.classList.add('correct')});
- if(!ok)btn.classList.add('wrong');if(ok){score++;correct++;streak++}else streak=0;
- document.getElementById('score').textContent=score;document.getElementById('streak').textContent=streak;
- const r=document.getElementById('reveal');r.classList.add('show');
- r.innerHTML=`<div class="verdict ${ok?'good':'bad'}">${ok?'✓ Correct':'✕ Not this time'}</div><div class="biganswer">${x.answer}</div><div class="fact">${x.reveal}</div><div class="nextrow"><span class="points">${ok?'+1 point':'0 points'}</span><button class="primary" id="next">${i===ROUND_SIZE-1?'See results':'Next →'}</button></div>`;
- document.getElementById('next').onclick=next;
-}
+function render(){const x=round[i];answered=false;document.getElementById('counter').textContent=`${i+1} / ${ROUND_SIZE}`;document.getElementById('bar').style.width=`${(i/ROUND_SIZE)*100}%`;const choices=shuffle(x.choices);card.innerHTML=`<div class="meta"><span class="pill">${x.category}</span><span class="pill">${x.difficulty}</span><span class="pill">${x.year}</span><span class="pill status">${x.id}</span></div><h1 class="q">${x.question}</h1><label>Pick one</label><div class="choices">${choices.map(c=>`<button data-a="${encodeURIComponent(c)}">${c}</button>`).join('')}</div><section class="reveal" id="reveal"></section>`;document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>choose(b))}
+function choose(btn){if(answered)return;answered=true;const x=round[i],chosen=decodeURIComponent(btn.dataset.a),ok=chosen===x.answer;document.querySelectorAll('[data-a]').forEach(b=>{b.disabled=true;if(decodeURIComponent(b.dataset.a)===x.answer)b.classList.add('correct')});if(!ok)btn.classList.add('wrong');if(ok){score++;correct++;streak++}else streak=0;document.getElementById('score').textContent=score;document.getElementById('streak').textContent=streak;const r=document.getElementById('reveal');r.classList.add('show');r.innerHTML=`<div class="verdict ${ok?'good':'bad'}">${ok?'✓ Correct':'✕ Not this time'}</div><div class="biganswer">${x.answer}</div><div class="fact">${x.reveal}</div><div class="nextrow"><span class="points">${ok?'+1 point':'0 points'}</span><button class="primary" id="next">${i===ROUND_SIZE-1?'See results':'Next →'}</button></div>`;document.getElementById('next').onclick=next}
 function next(){i++;if(i>=ROUND_SIZE)finish();else render()}
 function rating(n){if(n<=3)return 'You bought the T-shirt.';if(n<=5)return 'You know your way around a record store.';if(n<=7)return 'Okay. You listen.';if(n<=9)return 'Record-store employee territory.';return 'Annoyingly knowledgeable.'}
-function finish(){
- document.getElementById('bar').style.width='100%';document.getElementById('counter').textContent=`${ROUND_SIZE} / ${ROUND_SIZE}`;
- card.innerHTML=`<div class="end"><div class="kicker">Needle lifted</div><h1>That’s the round.</h1><div class="score">${score}</div><p>out of ${ROUND_SIZE}</p><div class="rating">${rating(score)}</div><div class="breakdown"><div><b>${correct}</b>correct</div><div><b>${ROUND_SIZE-correct}</b>missed</div><div><b>${Math.round(correct/ROUND_SIZE*100)}%</b>accuracy</div></div><button class="primary" id="again">Play another 10</button><p>A fresh round. Same dangerous confidence.</p></div>`;
- document.getElementById('again').onclick=newRound;
-}
-async function boot(){
- try{
-  const response=await fetch('data/questions.json');if(!response.ok)throw new Error(`HTTP ${response.status}`);
-  const payload=await response.json();
-  BANK=(payload.questions||[]).filter(q=>String(q.status).toLowerCase()==='verified');
-  if(BANK.length<ROUND_SIZE)throw new Error('Verified question bank is too small.');
-  intro();
- }catch(err){card.innerHTML=`<div class="end"><h1>Question bank unavailable.</h1><p>Please try again in a moment.</p></div>`;console.error(err)}
-}
+function finish(){document.getElementById('bar').style.width='100%';document.getElementById('counter').textContent=`${ROUND_SIZE} / ${ROUND_SIZE}`;card.innerHTML=`<div class="end"><div class="kicker">Needle lifted</div><h1>That’s the round.</h1><div class="score">${score}</div><p>out of ${ROUND_SIZE}</p><div class="rating">${rating(score)}</div><div class="breakdown"><div><b>${correct}</b>correct</div><div><b>${ROUND_SIZE-correct}</b>missed</div><div><b>${Math.round(correct/ROUND_SIZE*100)}%</b>accuracy</div></div><button class="primary" id="again">Play another 10</button><p>A fresh round. Same dangerous confidence.</p></div>`;document.getElementById('again').onclick=newRound}
+async function boot(){try{const response=await fetch('data/questions.json');if(!response.ok)throw new Error(`HTTP ${response.status}`);const payload=await response.json();BANK=payload.questions||[];if(BANK.length<ROUND_SIZE)throw new Error('Question bank is too small.');intro()}catch(err){card.innerHTML=`<div class="end"><h1>Question bank unavailable.</h1><p>Please try again in a moment.</p></div>`;console.error(err)}}
 boot();
 </script></body></html>
